@@ -1,0 +1,313 @@
+.admin-product-editor {
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+  color: #152238;
+}
+
+.admin-product-editor-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-product-editor-head > a {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  place-items: center;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #152238;
+}
+
+.admin-product-editor h1 {
+  color: #152238;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.admin-product-editor-head p {
+  margin-top: 2px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.admin-product-editor svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.admin-product-form {
+  display: grid;
+  gap: 16px;
+}
+
+.admin-product-form-layout {
+  display: grid;
+  grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.admin-product-form-image,
+.admin-product-form-info {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(21, 34, 56, 0.04);
+}
+
+.admin-product-form h2 {
+  margin: 0;
+  color: #152238;
+  font-size: 16px;
+}
+
+.admin-product-form-photo {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.admin-product-form-image > button,
+.admin-product-form-actions button {
+  height: 40px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-product-form-image > button {
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #152238;
+}
+
+.admin-product-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.admin-product-form label,
+.admin-product-form-status {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  color: #152238;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.admin-product-form .is-wide {
+  grid-column: 1 / -1;
+}
+
+.admin-product-form abbr {
+  color: #d92d4a;
+  text-decoration: none;
+}
+
+.admin-product-form input,
+.admin-product-form select,
+.admin-product-form textarea {
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #152238;
+  font: inherit;
+  font-weight: 500;
+}
+
+.admin-product-form textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+
+.admin-product-form input:focus-visible,
+.admin-product-form select:focus-visible,
+.admin-product-form textarea:focus-visible,
+.admin-product-form button:focus-visible,
+.admin-product-editor-head a:focus-visible {
+  border-color: #0878e8;
+  outline: 2px solid rgba(8, 120, 232, 0.2);
+  outline-offset: 1px;
+}
+
+.admin-product-form input[aria-invalid='true'],
+.admin-product-form select[aria-invalid='true'],
+.admin-product-form textarea[aria-invalid='true'] {
+  border-color: #d92d4a;
+}
+
+.admin-product-form input[readonly] {
+  background: #f4f7fb;
+  color: #152238;
+}
+
+.admin-product-form small {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.admin-product-form small a {
+  color: #0878e8;
+  font-weight: 700;
+}
+
+.admin-product-form small[role='alert'] {
+  color: #d92d4a;
+}
+
+.admin-product-form-status button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  min-height: 40px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #152238;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-product-form-status button span {
+  position: relative;
+  width: 44px;
+  height: 26px;
+  border-radius: 999px;
+  background: #cbd5e1;
+}
+
+.admin-product-form-status button span::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  transition: transform 150ms ease;
+}
+
+.admin-product-form-status button[aria-checked='true'] span {
+  background: #168a45;
+}
+
+.admin-product-form-status button[aria-checked='true'] span::after {
+  transform: translateX(18px);
+}
+
+.admin-product-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.admin-product-form-actions button:first-child {
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #152238;
+}
+
+.admin-product-form-actions button[type='submit'] {
+  border: 0;
+  background: #0878e8;
+  color: #ffffff;
+}
+
+.admin-product-form button:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+.admin-product-editor-state,
+.admin-product-editor-skeleton {
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.admin-product-editor-state {
+  display: grid;
+  justify-items: start;
+  gap: 8px;
+}
+
+.admin-product-editor-skeleton {
+  display: grid;
+  grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
+  gap: 16px;
+}
+
+.admin-product-editor-skeleton span {
+  display: block;
+  min-height: 320px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #e8eef5 25%, #f8fafc 50%, #e8eef5 75%);
+  background-size: 200% 100%;
+  animation: admin-product-editor-shimmer 1.2s linear infinite;
+}
+
+@keyframes admin-product-editor-shimmer {
+  from { background-position: 100% 0; }
+  to { background-position: -100% 0; }
+}
+
+@media (max-width: 900px) {
+  .admin-product-form-layout,
+  .admin-product-editor-skeleton {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .admin-product-editor h1 {
+    font-size: 20px;
+  }
+
+  .admin-product-form-grid,
+  .admin-product-form-actions,
+  .admin-product-form-actions button,
+  .admin-product-form-image > button {
+    width: 100%;
+  }
+
+  .admin-product-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .admin-product-editor-skeleton span,
+  .admin-product-form-status button span::after {
+    animation: none;
+    transition: none;
+  }
+}

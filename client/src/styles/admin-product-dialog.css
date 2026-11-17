@@ -1,0 +1,93 @@
+.admin-confirm-dialog {
+  width: min(440px, 100%);
+  justify-items: start;
+  padding: 22px;
+}
+
+.admin-confirm-dialog h2 {
+  color: #152238;
+  font-size: 20px;
+}
+
+.admin-confirm-dialog p {
+  color: #152238;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.admin-confirm-note {
+  padding: 12px;
+  border-radius: 10px;
+  background: #f8fafc;
+  color: #64748b;
+}
+
+.admin-confirm-mark {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 12px;
+}
+
+.admin-confirm-mark svg,
+.admin-confirm-dialog .button svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.admin-confirm-mark.is-deactivate,
+.admin-confirm-mark.is-activate {
+  background: #fff4df;
+  color: #c47b00;
+}
+
+.admin-confirm-mark.is-delete {
+  background: #fdecee;
+  color: #d92d4a;
+}
+
+.admin-confirm-dialog .dialog-actions {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.admin-confirm-dialog .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 40px;
+}
+
+.admin-confirm-dialog .admin-confirm-deactivate,
+.admin-confirm-dialog .admin-confirm-activate {
+  background: #e0920a;
+  color: #ffffff;
+}
+
+.admin-confirm-dialog .admin-confirm-deactivate:hover:not(:disabled),
+.admin-confirm-dialog .admin-confirm-activate:hover:not(:disabled) {
+  background: #c47b00;
+}
+
+.admin-confirm-dialog .admin-confirm-delete {
+  background: #d92d4a;
+  color: #ffffff;
+}
+
+.admin-confirm-dialog .admin-confirm-delete:hover:not(:disabled) {
+  background: #c21f3b;
+}
+
+@media (max-width: 640px) {
+  .admin-confirm-dialog .dialog-actions,
+  .admin-confirm-dialog .button {
+    width: 100%;
+  }
+}
